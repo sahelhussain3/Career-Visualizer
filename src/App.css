@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom styles for Career Path Visualizer */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+body {
+  padding-bottom: 60px; /* To prevent content from being hidden by the fixed footer */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Animation for the hero section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, p, button {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+p {
+  animation-delay: 0.2s;
+}
+
+button {
+  animation-delay: 0.4s;
+}
